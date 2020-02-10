@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\DutchTreat\\DutchTreat.csproj": {}
+    "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\Doutch-Treat\\DutchTreat.csproj": {}
   },
   "projects": {
-    "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\DutchTreat\\DutchTreat.csproj": {
+    "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\Doutch-Treat\\DutchTreat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\DutchTreat\\DutchTreat.csproj",
+        "projectUniqueName": "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\Doutch-Treat\\DutchTreat.csproj",
         "projectName": "DutchTreat",
-        "projectPath": "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\DutchTreat\\DutchTreat.csproj",
+        "projectPath": "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\Doutch-Treat\\DutchTreat.csproj",
         "packagesPath": "C:\\Users\\kremb\\.nuget\\packages\\",
-        "outputPath": "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\DutchTreat\\obj\\",
+        "outputPath": "D:\\devFaina\\WebAppWithAsp.netCoreCourse\\Doutch-Treat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kremb\\AppData\\Roaming\\NuGet\\NuGet.Config",
