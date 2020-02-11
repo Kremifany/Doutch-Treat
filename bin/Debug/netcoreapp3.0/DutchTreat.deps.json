@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.0": {
       "DutchTreat/1.0.0": {
         "dependencies": {
+          "OdeToCode.UseNodeModules": "3.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -312,6 +313,17 @@
         },
         "compile": {
           "DutchTreat.dll": {}
+        }
+      },
+      "OdeToCode.UseNodeModules/3.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -2013,6 +2025,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "OdeToCode.UseNodeModules/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w1Xdc8oDggU4nucBSnoR4pPT9oHf/JtYGOisaeaFd8jiOoBcByddyuIPmWI2GiNUpXGKMPQROD4wl1aeEZ5aaA==",
+      "path": "odetocode.usenodemodules/3.0.0",
+      "hashPath": "odetocode.usenodemodules.3.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
       "type": "referenceassembly",

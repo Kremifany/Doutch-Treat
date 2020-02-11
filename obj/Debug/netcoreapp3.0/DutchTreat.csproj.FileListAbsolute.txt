@@ -28,9 +28,12 @@ D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\bin\Debug\netcoreapp3.0\Dut
 D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.csprojAssemblyReference.cache
 D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\staticwebassets\DutchTreat.StaticWebAssets.Manifest.cache
 D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\staticwebassets\DutchTreat.StaticWebAssets.xml
-D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.MvcApplicationPartsAssemblyInfo.cache
 D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.AssemblyInfoInputs.cache
 D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.AssemblyInfo.cs
 D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.RazorTargetAssemblyInfo.cache
 D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.dll
 D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.pdb
+D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\bin\Debug\netcoreapp3.0\package.json
+D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\bin\Debug\netcoreapp3.0\OdeToCode.UseNodeModules.dll
+D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.MvcApplicationPartsAssemblyInfo.cache
+D:\devFaina\WebAppWithAsp.netCoreCourse\Doutch-Treat\obj\Debug\netcoreapp3.0\DutchTreat.csproj.CopyComplete
