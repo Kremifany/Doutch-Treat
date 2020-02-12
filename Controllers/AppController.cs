@@ -15,7 +15,7 @@ namespace DutchTreat.Controllers
     {
         public ActionResult Index()
         {
-            throw new InvalidOperationException();
+           // throw new InvalidOperationException();
             return View();
         }
     }
