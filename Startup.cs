@@ -17,35 +17,31 @@ namespace DutchTreat
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsEnvironment("Development"))
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
             else
             {
-                //add error page
+                app.UseExceptionHandler("/error");
             }
             app.UseStaticFiles();
 
             app.UseNodeModules();
 
-            app.UseRouting();
+            //app.UseRouting();
 
-            app.UseEndpoints(cfg =>
+            app.UseMvc(cfg =>
             {
-                
-
-                app.UseEndpoints(cfg =>
-                {
-                    cfg.MapControllerRoute("Default",
-                          "{controller}/{action}/{id?}",
-                          new { controller = "App", action = "Index" });
-                });
+                cfg.MapRoute("Default",
+                             "{controller}/{action}/{id?}",
+                             new { controller = "App", action = "Index" });
             });
         }
     }

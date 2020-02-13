@@ -22,6 +22,9 @@ namespace DutchTreat.Controllers
         public IActionResult Contact()
         {
             ViewBag.Title = "Contact Us";
+
+            throw new InvalidOperationException("Bad things happen!");
+
             return View();
         }
         [HttpGet("about")]
