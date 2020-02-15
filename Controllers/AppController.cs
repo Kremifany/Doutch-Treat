@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DutchTreat.Services;
 using DutchTreat.ViewModels;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,6 +15,12 @@ namespace DutchTreat.Controllers
 {
     public class AppController : Controller
     {
+        private readonly IMailService _mailService;
+
+        public AppController(IMailService mailService)
+        {
+           _mailService = mailService;
+        }
         public ActionResult Index()
         {
            // throw new InvalidOperationException();
@@ -26,8 +33,13 @@ namespace DutchTreat.Controllers
             return View();
         }
         [HttpPost("contact")]
-        public IActionResult Contact(ContactViewModel model )
+        public IActionResult Contact(ContactViewModel model)
         {
+            if (ModelState.IsValid)
+            {
+                _mailService.SendMessage("fkreminsky@gmail.com", model.Subject, $"From: {model.Name} - {model.Email}, Message: {model.Message}");
+            }
+            
             return View();
         }
 
