@@ -19,11 +19,12 @@ namespace DutchTreat.Controllers
 
         public AppController(IMailService mailService)
         {
-           _mailService = mailService;
+            _mailService = mailService;
         }
-        public ActionResult Index()
+
+        public IActionResult Index()
         {
-           // throw new InvalidOperationException();
+            // throw new InvalidOperationException();
             return View();
         }
         [HttpGet("contact")]
@@ -38,8 +39,10 @@ namespace DutchTreat.Controllers
             if (ModelState.IsValid)
             {
                 _mailService.SendMessage("fkreminsky@gmail.com", model.Subject, $"From: {model.Name} - {model.Email}, Message: {model.Message}");
+                ViewBag.UserMessage = "Mail Sent";
+                ModelState.Clear();
             }
-            
+
             return View();
         }
 
