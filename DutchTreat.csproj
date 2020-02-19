@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <Folder Include="Data\Entities\" />
+    <Folder Include="Data\DutchContext\" />
   </ItemGroup>
 
 </Project>
