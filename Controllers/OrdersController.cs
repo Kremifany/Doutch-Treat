@@ -32,11 +32,14 @@ namespace DutchTreat.Controllers
         [HttpGet]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
-        public ActionResult<IEnumerable<Order>> Get()
+        public ActionResult<IEnumerable<Order>> Get(bool includeItems = true)
         {
+            var results = _repository.GetAllOrders(includeItems);
             try
             {
-                return Ok(_repository.GetAllOrders());
+                return Ok(_mapper.Map<IEnumerable<Order>,
+                                      IEnumerable<OrderViewModel>>
+                                      (results));
             }
             catch(Exception ex)
             {
@@ -65,16 +68,12 @@ namespace DutchTreat.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]OrderViewModel model)
         {
+            //add it to the db
             try
             {
                 if (ModelState.IsValid)
                 {
-                    var newOrder = new Order()
-                    {
-                        OrderDate = model.OrderDate,
-                        OrderNumber = model.OrderNumber,
-                        Id = model.OrderId
-                    };
+                    var newOrder = _mapper.Map<OrderViewModel, Order>(model);
 
                     if(newOrder.OrderDate == DateTime.MinValue)
                     {
@@ -82,14 +81,8 @@ namespace DutchTreat.Controllers
                     }
                     _repository.AddEntity(newOrder);
                     if (_repository.SaveAll())
-                    {
-                        var vm = new OrderViewModel()
-                        {
-                            OrderId = newOrder.Id,
-                            OrderDate = newOrder.OrderDate,
-                            OrderNumber = newOrder.OrderNumber
-                        };
-                        return Created($"/api/orders/{vm.OrderId}", vm);
+                    {                       
+                        return Created($"/api/orders/{newOrder.Id}", _mapper.Map<Order, OrderViewModel>(newOrder));  
                     }
                 }
                 else
