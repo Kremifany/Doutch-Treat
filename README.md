@@ -1,2 +1,0 @@
-# WebAppWithAsp.NetCore
- PluralSightCourse

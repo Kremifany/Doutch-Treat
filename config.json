@@ -1,9 +1,19 @@
-﻿{
+{
   "Colors": {
     "Favorite": "blue"
   },
   "ConnectionStrings": {
-    "DutchConnectionString": "server=(localDb)\\ProjectsV13; Database=DutchTreatDb; Integrated Security=true;MultipleActiveResultSets=true"
+    "DutchConnectionString": "Data Source=(localdb)\\ProjectsV13;Initial Catalog=DutchTreatDb;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning"
+    }
+  },
+  "Tokens": {
+    "Key": "'asjadfjab;afcbab'anfjb",
+    "Issuer": "localhost",
+    "Audience": "People"
   }
-
 }
