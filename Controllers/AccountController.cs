@@ -72,6 +72,7 @@ namespace DutchTreat.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "App");
         }
+
         [HttpPost]
         public async Task<IActionResult> CreateToken([FromBody] LoginViewModel model)
         {
@@ -84,11 +85,11 @@ namespace DutchTreat.Controllers
                     if (result.Succeeded)
                     {
                         //create the token 
-                        var claims = new[]
+                        var claims = new[]      
                         {
                             new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-                            new Claim(JwtRegisteredClaimNames.Jti, new Guid().ToString())
-                            //new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName)
+                            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                            new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName)
                         };
                         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"]));
                         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

@@ -12,8 +12,8 @@
     }
   },
   "Tokens": {
-    "Key": "'asjadfjab;afcbab'anfjb",
-    "Issuer": "localhost",
-    "Audience": "People"
+    "Key": "a;lkjasdf;lkajsd;flkjas ;dflkja sd",
+    "Issuer": "http://localhost:8888",
+    "Audience": "users"
   }
 }
