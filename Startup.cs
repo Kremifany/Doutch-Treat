@@ -90,6 +90,7 @@ namespace DutchTreat
 
             app.UseRouting();
             app.UseAuthorization();
+
             app.UseEndpoints(cfg =>
             {
                 cfg.MapControllerRoute("Default",
